@@ -1,0 +1,1260 @@
+# KuKufi Glyph Definitions ■■■■■■ █
+# Tüm harfler aynı yükseklikte olmalı (5 satır)
+# Genişlik harfe göre değişebilir
+# Bağlantı kuralı: 
+#   Sol kenardaki ▄ = önceki harften gelen bağlantı
+#   Sağ kenardaki ▄ = sonraki harfe giden bağlantı
+#   Tüm bağlantılar 4. satırda (baseline) gerçekleşir
+height = 8
+
+# ─────────────────────────────────────────────
+# ELIF / ALIF (ا) — Sağa bağlanmaz (non-connecting)
+# Dikey çubuk. Tek başına veya son harfte kullanılır.
+# ─────────────────────────────────────────────
+[alif]
+unicode = "ا"
+connects_next = false
+connects_prev = true
+[alif.isolated]
+art = '''
+   █ 
+   █ 
+   █ 
+   █ 
+   '''
+[alif.initial]
+art = '''
+ █ 
+ █ 
+ █ 
+ █ 
+   '''
+[alif.medial]
+art = '''
+ █ 
+ █ 
+ █ 
+ █▄
+   '''
+[alif.final]
+art = '''
+ █ 
+ █ 
+ █ 
+ █▄
+   '''
+
+# ─────────────────────────────────────────────
+# BE / BA (ب) — Çift bağlantı, 1 nokta alt
+# Yatay tepsi + alt nokta
+# ─────────────────────────────────────────────
+[ba]
+unicode = "ب"
+connects_next = true
+connects_prev = true
+[ba.isolated]
+art = '''
+      
+█   █   
+█   █   
+█████   
+      '''
+[ba.initial]
+art = '''
+      
+ █     
+ █     
+██    
+      '''
+[ba.medial]
+art = '''
+      
+ █     
+ █     
+███   
+       '''
+[ba.final]
+art = '''
+      
+█   █   
+█   █   
+█████▄  
+      '''
+
+# ─────────────────────────────────────────────
+# TE / TA (ت) — Çift bağlantı, 2 nokta üst
+# Ba tabanı + üstte 2 nokta
+# ─────────────────────────────────────────────
+[ta]
+unicode = "ت"
+connects_next = true
+connects_prev = true
+[ta.isolated]
+art = '''
+      
+█   █   
+█   █   
+█████   
+      '''
+[ta.initial]
+art = '''
+      
+ █     
+ █     
+██    
+      '''
+[ta.medial]
+art = '''
+      
+ █     
+ █     
+███   
+       '''
+[ta.final]
+art = '''
+      
+█   █   
+█   █   
+█████▄  
+      '''
+
+# ─────────────────────────────────────────────
+# SE / THA (ث) — Çift bağlantı, 3 nokta üst
+# Ba tabanı + üstte üçgen 3 nokta
+# ─────────────────────────────────────────────
+[tha]
+unicode = "ث"
+connects_next = true
+connects_prev = true
+[tha.isolated]
+art = '''
+      
+█   █   
+█   █   
+█████   
+      '''
+[tha.initial]
+art = '''
+      
+ █     
+ █     
+██    
+      '''
+[tha.medial]
+art = '''
+      
+ █     
+ █     
+███   
+       '''
+[tha.final]
+art = '''
+      
+█   █   
+█   █   
+█████▄  
+      '''
+
+# ─────────────────────────────────────────────
+# CİM / JIM (ج) — Çift bağlantı, 1 nokta alt
+# Dikdörtgen kanca + alt nokta
+# ─────────────────────────────────────────────
+[jim]
+unicode = "ج"
+connects_next = true
+connects_prev = true
+[jim.isolated]
+art = '''
+     
+██████ 
+     █ 
+██████
+█
+██████
+     '''
+[jim.initial]
+art = '''
+     
+ █████ 
+     █ 
+██████
+     '''
+[jim.medial]
+art = '''
+      
+ █████ 
+     █ 
+██████▄
+      '''
+[jim.final]
+art = '''
+     
+██████ 
+     █ 
+██████▄
+█
+██████
+     '''
+
+# ─────────────────────────────────────────────
+# HA / HAH (ح) — Çift bağlantı, noktasız
+# Jim tabanı, nokta yok
+# ─────────────────────────────────────────────
+[hah]
+unicode = "ح"
+connects_next = true
+connects_prev = true
+[hah.isolated]
+art = '''
+     
+██████ 
+     █ 
+██████
+█
+██████
+     '''
+[hah.initial]
+art = '''
+     
+ █████ 
+     █ 
+██████
+     '''
+[hah.medial]
+art = '''
+      
+ █████ 
+     █ 
+██████▄
+      '''
+[hah.final]
+art = '''
+     
+██████ 
+     █ 
+██████▄
+█
+██████
+     '''
+
+# ─────────────────────────────────────────────
+# HI / KHA (خ) — Çift bağlantı, 1 nokta üst
+# Jim tabanı + üstte nokta
+# ─────────────────────────────────────────────
+[kha]
+unicode = "خ"
+connects_next = true
+connects_prev = true
+[kha.isolated]
+art = '''
+     
+██████ 
+     █ 
+██████
+█
+██████
+     '''
+[kha.initial]
+art = '''
+     
+ █████ 
+     █ 
+██████
+     '''
+[kha.medial]
+art = '''
+      
+ █████ 
+     █ 
+██████▄
+      '''
+[kha.final]
+art = '''
+     
+██████ 
+     █ 
+██████▄
+█
+██████
+     '''
+
+# ─────────────────────────────────────────────
+# DAL (د) — Sağa bağlanmaz, sola bağlanır
+# Açılı adım şekli (L-biçimi)
+# ─────────────────────────────────────────────
+[dal]
+unicode = "د"
+connects_next = false
+connects_prev = true
+[dal.isolated]
+art = '''
+    
+███   
+  █ 
+███ 
+    '''
+[dal.initial]
+art = '''
+    
+███   
+  █ 
+███ 
+    '''
+[dal.medial]
+art = '''
+     
+███   
+  █ 
+███▄ 
+     '''
+[dal.final]
+art = '''
+    
+███   
+  █ 
+███▄ 
+    '''
+
+# ─────────────────────────────────────────────
+# ZEL / DHAL (ذ) — Sağa bağlanmaz, sola bağlanır
+# Dal + üstte nokta
+# ─────────────────────────────────────────────
+[dhal]
+unicode = "ذ"
+connects_next = false
+connects_prev = true
+[dhal.isolated]
+art = '''
+    
+███   
+  █ 
+███ 
+    '''
+[dhal.initial]
+art = '''
+    
+███   
+  █ 
+███ 
+    '''
+[dhal.medial]
+art = '''
+     
+███   
+  █ 
+███▄ 
+     '''
+[dhal.final]
+art = '''
+    
+███   
+  █ 
+███▄ 
+    '''
+
+# ─────────────────────────────────────────────
+# RA (ر) — Sağa bağlanmaz, sola bağlanır
+# Kısa kanca, baseline altına iner
+# ─────────────────────────────────────────────
+[ra]
+unicode = "ر"
+connects_next = false
+connects_prev = true
+[ra.isolated]
+art = '''
+   
+  █ 
+  █ 
+  █ 
+  █  
+███   '''
+[ra.initial]
+art = '''
+   
+  █ 
+  █ 
+  █ 
+  █  
+███   '''
+[ra.medial]
+art = '''
+   
+  █ 
+  █ 
+  █▄ 
+  █  
+███   '''
+[ra.final]
+art = '''
+   
+  █ 
+  █ 
+  █▄
+  █  
+███   '''
+
+# ─────────────────────────────────────────────
+# ZE / ZAY (ز) — Sağa bağlanmaz, sola bağlanır
+# Ra + üstte nokta
+# ─────────────────────────────────────────────
+[zay]
+unicode = "ز"
+connects_next = false
+connects_prev = true
+[zay.isolated]
+art = '''
+   
+  █ 
+  █ 
+  █ 
+  █  
+███   '''
+[zay.initial]
+art = '''
+   
+  █ 
+  █ 
+  █ 
+  █  
+███   '''
+[zay.medial]
+art = '''
+   
+  █ 
+  █ 
+  █▄ 
+  █  
+███   '''
+[zay.final]
+art = '''
+   
+  █ 
+  █ 
+  █▄
+  █  
+███   '''
+
+# ─────────────────────────────────────────────
+# SİN (س) — Çift bağlantı, noktasız
+# Üç diş + yatay taban
+# ─────────────────────────────────────────────
+[sin]
+unicode = "س"
+connects_next = true
+connects_prev = true
+[sin.isolated]
+art = '''
+       
+   █ █ █    
+   █ █ █  
+█  █████ 
+█  █    
+████
+'''
+[sin.initial]
+art = '''
+       
+ █ █ █    
+ █ █ █  
+██████ 
+       '''
+[sin.medial]
+art = '''
+        
+ █ █ █     
+ █ █ █  
+▄█████▄
+        '''
+[sin.final]
+art = '''
+       
+   █ █ █    
+   █ █ █  
+█  █████ 
+█  █    
+████
+'''
+
+# ─────────────────────────────────────────────
+# ŞIN / SHIN (ش) — Çift bağlantı, 3 nokta üst
+# Sin + üstte 3 nokta
+# ─────────────────────────────────────────────
+[shin]
+unicode = "ش"
+connects_next = true
+connects_prev = true
+[shin.isolated]
+art = '''
+       
+   █ █ █    
+   █ █ █  
+█  █████ 
+█  █    
+████
+'''
+[shin.initial]
+art = '''
+       
+ █ █ █    
+ █ █ █  
+██████ 
+       '''
+[shin.medial]
+art = '''
+        
+ █ █ █     
+ █ █ █  
+▄█████▄
+        '''
+[shin.final]
+art = '''
+       
+   █ █ █    
+   █ █ █  
+█  █████ 
+█  █    
+████
+'''
+
+
+# ─────────────────────────────────────────────
+# SAD (ص) — Çift bağlantı, noktasız
+# Geniş kapalı kutu
+# ─────────────────────────────────────────────
+[sad]
+unicode = "ص"
+connects_next = true
+connects_prev = true
+[sad.isolated]
+art = '''
+      
+   █  █████ 
+   █  █   █ 
+█  ████████ 
+█  █
+████
+      '''
+[sad.initial]
+art = '''
+      
+ █████ 
+ █   █ 
+▄█████ 
+      '''
+[sad.medial]
+art = '''
+       
+ █████ 
+ █   █ 
+▄█████▄
+       '''
+[sad.final]
+art = '''
+      
+   █  █████ 
+   █  █   █ 
+█  ████████▄
+█  █
+████
+      '''
+
+# ─────────────────────────────────────────────
+# DAD (ض) — Çift bağlantı, 1 nokta üst
+# Sad + üstte nokta
+# ─────────────────────────────────────────────
+[dad]
+unicode = "ض"
+connects_next = true
+connects_prev = true
+[dad.isolated]
+art = '''
+      
+   █  █████ 
+   █  █   █ 
+█  ████████ 
+█  █
+████
+      '''
+[dad.initial]
+art = '''
+      
+ █████ 
+ █   █ 
+▄█████ 
+      '''
+[dad.medial]
+art = '''
+       
+ █████ 
+ █   █ 
+▄█████▄
+       '''
+[dad.final]
+art = '''
+      
+   █  █████ 
+   █  █   █ 
+█  ████████▄
+█  █
+████
+      '''
+
+# ─────────────────────────────────────────────
+# TI / TAH (ط) — Çift bağlantı, noktasız
+# Kapalı kutu + dikey yükselen çubuk
+# ─────────────────────────────────────────────
+[tah]
+unicode = "ط"
+connects_next = true
+connects_prev = true
+[tah.isolated]
+art = '''
+  █    
+  █    
+  █    
+  █    
+  █████ 
+  █   █ 
+▄▄█████
+      '''
+[tah.initial]
+art = '''
+ █    
+ █    
+ █    
+ █    
+ █████ 
+ █   █ 
+▄█████
+      '''
+[tah.medial]
+art = '''
+ █    
+ █    
+ █    
+ █    
+ █████ 
+ █   █ 
+▄█████▄
+      '''
+[tah.final]
+art = '''
+  █    
+  █    
+  █    
+  █    
+  █████ 
+  █   █ 
+▄▄█████▄
+      '''
+
+# ─────────────────────────────────────────────
+# ZI / DHAH (ظ) — Çift bağlantı, 1 nokta üst
+# Tah + yükselen çubuğun yanında nokta
+# ─────────────────────────────────────────────
+[dhah]
+unicode = "ظ"
+connects_next = true
+connects_prev = true
+[dhah.isolated]
+art = '''
+  █    
+  █    
+  █    
+  █    
+  █████ 
+  █   █ 
+▄▄█████
+      '''
+[dhah.initial]
+art = '''
+ █    
+ █    
+ █    
+ █    
+ █████ 
+ █   █ 
+▄█████
+      '''
+[dhah.medial]
+art = '''
+ █    
+ █    
+ █    
+ █    
+ █████ 
+ █   █ 
+▄█████▄
+      '''
+[dhah.final]
+art = '''
+  █    
+  █    
+  █    
+  █    
+  █████ 
+  █   █ 
+▄▄█████▄
+      '''
+
+# ─────────────────────────────────────────────
+# AYIN / AYN (ع) — Çift bağlantı, noktasız
+# Açısal C-biçimi (sağa açık)
+# ─────────────────────────────────────────────
+[ayn]
+unicode = "ع"
+connects_next = true
+connects_prev = true
+[ayn.isolated]
+art = '''
+    
+ ███ 
+ █   
+▄███ 
+    '''
+[ayn.initial]
+art = '''
+    
+ ███
+ █ █
+ ███ 
+  █   
+▄███▄
+'''
+[ayn.medial]
+art = '''
+
+ ███
+ █ █
+ ███ 
+  █   
+▄███▄
+█
+████ 
+     '''
+[ayn.final]
+art = '''
+    
+  ███
+  █  
+█████
+█    
+█████
+'''
+
+# ─────────────────────────────────────────────
+# GAYIN / GHAYN (غ) — Çift bağlantı, 1 nokta üst
+# Ayn + üstte nokta
+# ─────────────────────────────────────────────
+[ghayn]
+unicode = "غ"
+connects_next = true
+connects_prev = true
+[ghayn.isolated]
+art = '''
+    
+ ███ 
+ █   
+▄███ 
+    '''
+[ghayn.initial]
+art = '''
+    
+ ███
+ █ █
+ ███ 
+  █   
+▄███▄
+'''
+[ghayn.medial]
+art = '''
+
+ ███
+ █ █
+ ███ 
+  █   
+▄███▄
+█
+████ 
+     '''
+[ghayn.final]
+art = '''
+    
+  ███
+  █  
+█████
+█    
+█████
+'''
+
+# ─────────────────────────────────────────────
+# FE / FA (ف) — Çift bağlantı, 1 nokta üst
+# Küçük kapalı kutu + üstte nokta
+# ─────────────────────────────────────────────
+[fa]
+unicode = "ف"
+connects_next = true
+connects_prev = true
+[fa.isolated]
+art = '''
+     
+     ███  
+     █ █  
+ █   ███  
+ █     █
+ ███████
+     '''
+[fa.initial]
+art = '''
+     
+ ███  
+ █ █  
+ ███  
+   █
+ ███
+     '''
+[fa.medial]
+art = '''
+      
+ ███  
+ █ █  
+ ███  
+   █
+ ███▄
+      '''
+[fa.final]
+art = '''
+   
+     ███  
+     █ █  
+ █   ███  
+ █     █
+ ███████▄
+     '''
+
+# ─────────────────────────────────────────────
+# KAF / QAF (ق) — Çift bağlantı, 2 nokta üst
+# Fa benzeri kutu + alt iniş + 2 nokta üst
+# ─────────────────────────────────────────────
+[qaf]
+unicode = "ق"
+connects_next = true
+connects_prev = true
+[qaf.isolated]
+art = '''
+     
+ █  ███  
+ █  █ █  
+ █  ███
+ █    █
+ ██████
+     '''
+[qaf.initial]
+art = '''
+     
+ ███  
+ █ █  
+ ███  
+   █
+ ███
+     '''
+[qaf.medial]
+art = '''
+      
+ ███  
+ █ █  
+ ███  
+   █
+ ███▄
+      '''
+[qaf.final]
+art = '''
+   
+ █  ███  
+ █  █ █  
+ █  ███▄  
+ █    █
+ ██████
+     '''
+
+# ─────────────────────────────────────────────
+# KEF / KAF (ك) — Çift bağlantı
+# Dikey çubuk + geniş taban
+# ─────────────────────────────────────────────
+[kaf]
+unicode = "ك"
+connects_next = true
+connects_prev = true
+[kaf.isolated]
+art = '''
+     
+ ██████ 
+ █    
+ ██████
+      █
+ ██████
+     '''
+[kaf.initial]
+art = '''
+     
+ ██████ 
+ █    
+ ██████
+      █
+ ██████
+     '''
+[kaf.medial]
+art = '''
+      
+ ██████ 
+ █    
+ ██████
+      █
+▄██████▄
+      '''
+[kaf.final]
+art = '''
+     
+ ██████ 
+ █    
+ ██████
+      █
+ ██████▄
+     '''
+
+# ─────────────────────────────────────────────
+# LAM (ل) — Çift bağlantı
+# Uzun dikey + yatay taban
+# ─────────────────────────────────────────────
+[lam]
+unicode = "ل"
+connects_next = true
+connects_prev = true
+[lam.isolated]
+art = '''
+   █  
+   █  
+   █  
+   █
+█  █
+█  █
+█  █ 
+█  █
+████
+'''
+[lam.initial]
+art = '''
+ █  
+ █  
+ █  
+ █
+ █
+ █
+▄█
+'''
+[lam.medial]
+art = '''
+ █  
+ █  
+ █  
+ █
+ █
+ █
+▄█▄
+'''
+[lam.final]
+art = '''
+   █  
+   █  
+   █  
+   █
+█  █
+█  █
+█ ▄█▄
+█  █
+████
+   '''
+
+# ─────────────────────────────────────────────
+# MİM (م) — Çift bağlantı
+# Küçük kapalı kare
+# ─────────────────────────────────────────────
+[mim]
+unicode = "م"
+connects_next = true
+connects_prev = true
+[mim.isolated]
+art = '''
+    
+  ███ 
+  █ █ 
+█████ 
+█
+█
+'''
+[mim.initial]
+art = '''
+    
+ ███ 
+ █ █ 
+▄███
+    '''
+[mim.medial]
+art = '''
+     
+ ███ 
+ █ █ 
+▄███▄
+     '''
+[mim.final]
+art = '''
+    
+  ███ 
+  █ █ 
+█████▄ 
+█
+█
+'''
+
+# ─────────────────────────────────────────────
+# NUN (ن) — Çift bağlantı, 1 nokta üst
+# Yatay tepsi + üstte nokta
+# ─────────────────────────────────────────────
+[nun]
+unicode = "ن"
+connects_next = true
+connects_prev = true
+[nun.isolated]
+art = '''
+  
+
+
+█ █ 
+███
+      '''
+[nun.initial]
+art = '''
+      
+ █  
+▄█
+      '''
+[nun.medial]
+art = '''
+       
+ █   
+▄█▄
+      '''
+[nun.final]
+art = '''
+ 
+█ █    
+█ █▄    
+█ █ 
+███
+      '''
+
+# ─────────────────────────────────────────────
+# HE / HA (ه) — Çift bağlantı
+# Uzun kapalı pencere şekli
+# ─────────────────────────────────────────────
+[ha]
+unicode = "ه"
+connects_next = true
+connects_prev = true
+[ha.isolated]
+art = '''
+███ 
+█ █ 
+███ 
+    '''
+[ha.initial]
+art = '''
+ ███ 
+ █ █ 
+▄███
+ █ █ 
+ ███
+    '''
+[ha.medial]
+art = '''
+ ███ 
+ █ █ 
+▄███▄
+ █ █ 
+ ███
+     '''
+[ha.final]
+art = '''
+███ 
+█ █ 
+███▄
+    '''
+
+# ─────────────────────────────────────────────
+# VAV / WAW (و) — Sağa bağlanmaz, sola bağlanır
+# Küçük kare baş + alt iniş
+# ─────────────────────────────────────────────
+[waw]
+unicode = "و"
+connects_next = false
+connects_prev = true
+[waw.isolated]
+art = '''
+   
+   
+ ███ 
+ █ █ 
+ ███ 
+   █
+ ███   '''
+[waw.initial]
+art = '''
+   
+   
+ ███ 
+ █ █ 
+ ███ 
+   █
+ ███   '''
+[waw.medial]
+art = '''
+    
+    
+ ███ 
+ █ █ 
+ ███▄
+   █
+ ███   '''
+[waw.final]
+art = '''
+   
+   
+ ███ 
+ █ █ 
+ ███▄
+   █
+ ███   '''
+
+# ─────────────────────────────────────────────
+# YE / YA (ي) — Çift bağlantı, 2 nokta alt
+# Yatay tepsi + altta 2 nokta
+# ─────────────────────────────────────────────
+[ya]
+unicode = "ي"
+connects_next = true
+connects_prev = true
+[ya.isolated]
+art = '''
+      
+   ███ 
+   █ █ 
+█  █ █
+█  █
+████    '''
+[ya.initial]
+art = '''
+      
+ █     
+ █     
+▄█
+      '''
+[ya.medial]
+art = '''
+       
+ █      
+ █     
+▄█▄
+      '''
+[ya.final]
+art = '''
+      
+ █  ███ 
+ █  █ █ 
+ ████ █▄
+      '''
+
+# ─────────────────────────────────────────────
+# LAM-ELİF LİGATÜRÜ (لا) — Sağa bağlanmaz, sola bağlanır
+# İki paralel dikey + ortak taban
+# ─────────────────────────────────────────────
+[lam_alif]
+unicode = "لا"
+connects_next = false
+connects_prev = true
+[lam_alif.isolated]
+art = '''
+█ █ 
+█ █ 
+███
+ █
+███
+█ █   
+███
+'''
+[lam_alif.initial]
+art = '''
+█ █ 
+█ █ 
+███
+ █
+███
+█ █   
+███
+'''
+[lam_alif.medial]
+art = '''
+█ █ 
+█ █ 
+███
+ █
+███
+█ █   
+███▄
+'''
+[lam_alif.final]
+art = '''
+█ █ 
+█ █ 
+███
+ █
+███
+█ █   
+███▄
+'''
+
+# ─────────────────────────────────────────────
+# HEMZE / HAMZA (ء) — Bağlantısız
+# Küçük bağımsız işaret
+# ─────────────────────────────────────────────
+[hamza]
+unicode = "ء"
+connects_next = false
+connects_prev = false
+[hamza.isolated]
+art = '''
+   
+ ███ 
+ █   
+ ███ 
+   '''
+[hamza.initial]
+art = '''
+   
+ ███ 
+ █   
+ ███ 
+   '''
+[hamza.medial]
+art = '''
+   
+ ███ 
+ █   
+ ███ 
+   '''
+[hamza.final]
+art = '''
+   
+ ███ 
+ █   
+ ███ 
+   '''
